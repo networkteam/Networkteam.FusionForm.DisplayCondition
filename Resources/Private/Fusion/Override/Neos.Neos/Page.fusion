@@ -1,0 +1,30 @@
+prototype(Neos.Neos:Page) {
+
+    # loads the package's stylesheets
+    head.stylesheets {
+         displayCondition = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes.rel = 'stylesheet'
+            attributes.href = Neos.Fusion:Value {
+                value = Neos.Fusion:ResourceUri {
+                    path = 'resource://Networkteam.FusionForm.DisplayCondition/Public/Dist/main.css'
+                }
+            }
+        }
+    }
+
+    # loads the package's javascript sources
+    displayConditionScript = Neos.Fusion:Tag {
+        @position = 'before closingBodyTag'
+
+        tagName = 'script'
+        attributes {
+            type = 'text/javascript'
+            src = Neos.Fusion:Value {
+                value = Neos.Fusion:ResourceUri {
+                    path = 'resource://Networkteam.FusionForm.DisplayCondition/Public/Dist/main.js'
+                }
+            }
+        }
+    }
+}

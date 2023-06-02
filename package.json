@@ -1,0 +1,13 @@
+{
+  "name": "Networkteam.FusionForm.DisplayCondition",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.17.19",
+    "@networkteam/eel": "~2.0"
+  },
+  "scripts": {
+    "build": "esbuild ./Resources/Private/JavaScript/init.js --bundle --minify --sourcemap --outfile=Resources/Public/Dist/main.js"
+  }
+}

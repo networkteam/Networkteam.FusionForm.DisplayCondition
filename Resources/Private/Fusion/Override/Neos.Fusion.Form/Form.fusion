@@ -1,0 +1,12 @@
+prototype(Neos.Fusion.Form:Form) {
+
+    attributes.@process.addFormState = Neos.Fusion:Value {
+        additionalAttributes = Neos.Fusion:DataStructure {
+            // add id to make displayConditon script work
+            id = ${form.namespace}
+            // add data attribute containing JSON encoded form data
+            data-form-state = ${Json.stringify(form.data)}
+        }
+        value = ${Array.concat(value, this.additionalAttributes)}
+    }
+}

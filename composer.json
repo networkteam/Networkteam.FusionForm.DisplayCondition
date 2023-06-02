@@ -1,0 +1,19 @@
+{
+    "description": "Display condition capability for forms build with [Fusion Form](https://github.com/neos/fusion-form/)",
+    "type": "neos-package",
+    "name": "networkteam/fusionform-displaycondition",
+    "require": {
+        "neos/fusion-form": "~2.1",
+        "neos/neos": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Networkteam\\FusionForm\\DisplayCondition\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Networkteam.FusionForm.DisplayCondition"
+        }
+    }
+}
