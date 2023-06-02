@@ -1,12 +1,17 @@
 prototype(Neos.Fusion.Form:Form) {
 
-    attributes.@process.addFormState = Neos.Fusion:Value {
-        additionalAttributes = Neos.Fusion:DataStructure {
+    // to enable display condition feature set context variable {displayConditionEnabled} to `true`
+
+    attributes.@process.addAdditionalAttributes = Neos.Fusion:Value {
+        @if.displayConditionEnabled = ${displayConditionEnabled}
+        attributes = Neos.Fusion:DataStructure {
             // add id to make displayConditon script work
             id = ${form.namespace}
-            // add data attribute containing JSON encoded form data
+            // add JSON encoded form data so that data values are taken into account during evaluation
             data-form-state = ${Json.stringify(form.data)}
+            // add required css class
+            class = ${String.isBlank(value.class) ? 'dynamic-form' : value.class + ' dynamic-form'}
         }
-        value = ${Array.concat(value, this.additionalAttributes)}
+        value = ${Array.concat(value, this.attributes)}
     }
 }

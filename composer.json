@@ -1,7 +1,13 @@
 {
-    "description": "Display condition capability for forms build with [Fusion Form](https://github.com/neos/fusion-form/)",
+    "description": "Control the visibility (JavaScript) of Neos Fusion Form elements while filling out the form.",
     "type": "neos-package",
     "name": "networkteam/fusionform-displaycondition",
+    "authors": [
+        {
+            "name": "networkteam GmbH",
+            "homepage": "https://networkteam.com"
+        }
+    ],
     "require": {
         "neos/fusion-form": "~2.1",
         "neos/neos": "*"

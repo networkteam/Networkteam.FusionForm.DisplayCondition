@@ -1,8 +1,13 @@
 {
-  "name": "Networkteam.FusionForm.DisplayCondition",
+  "name": "@networkteam/fusionform-displaycondition",
   "version": "1.0.0",
   "main": "index.js",
+  "author": {
+    "name": "networkteam GmbH",
+    "url": "https://networkteam.com"
+  },
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "esbuild": "^0.17.19",
     "@networkteam/eel": "~2.0"

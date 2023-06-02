@@ -1,4 +1,4 @@
 prototype(Networkteam.FusionForm.DisplayCondition:Helper.DisplayConditionAugmenter) < prototype(Neos.Fusion:Augmenter) {
     data-display-condition = ${displayCondition}
-    data-display-condition.@if.addDisplayCondition=${!String.isBlank(displayCondition) && !node.context.inBackend}
+    data-display-condition.@if.addDisplayCondition=${!String.isBlank(displayCondition) && !node.context.inBackend && displayConditionEnabled}
 }
