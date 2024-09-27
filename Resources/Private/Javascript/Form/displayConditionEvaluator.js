@@ -38,7 +38,6 @@ function evaluateFormDisplayConditions(formElement, exprs) {
 
   formElement.querySelectorAll(formElementSelector).forEach(el => {
     const displayCondition = el.getAttribute('data-display-condition');
-    console.log(el);
 
     const expr = exprs[displayCondition];
     if (typeof expr === 'undefined') {
@@ -46,9 +45,7 @@ function evaluateFormDisplayConditions(formElement, exprs) {
     }
 
     const evaluatedCondition = expr(data);
-    console.log("evaluatedCondition: "+ evaluatedCondition)
     if (evaluatedCondition) {
-      console.log("show element")
       showElement(el);
     } else {
       hideElement(el);
@@ -121,12 +118,8 @@ export function getFormData(formElement) {
     data = JSON.parse(formState);
   }
 
-  console.log(formElement)
-
   // Form element names will be like "--formId[elementId]", we just want "elementId"
   const currentData = serializeObject(formElement, `${formElement.id}`)
-
-  console.log(currentData)
 
   // Override form data from current values in form
   for (let identifier in currentData) {
