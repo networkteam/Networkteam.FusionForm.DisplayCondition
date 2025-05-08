@@ -1,0 +1,7 @@
+prototype(Sitegeist.PaperTiger:Form) {
+
+    // enable displayCondition via prototype nesting because RuntimeForm is uncached
+    prototype(Neos.Fusion.Form:Runtime.RuntimeForm) {
+        @context.displayConditionEnabled = ${true}
+    }
+}

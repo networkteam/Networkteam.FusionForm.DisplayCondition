@@ -1,0 +1,7 @@
+prototype(Sitegeist.PaperTiger:Fieldset) {
+    displayCondition = ${q(node).property('displayCondition')}
+
+    renderer.@process.addDisplayCondition = Networkteam.FusionForm.DisplayCondition:Helper.DisplayConditionAugmenter {
+        @context.displayCondition = ${props.displayCondition}
+    }
+}

@@ -1,0 +1,13 @@
+'Networkteam.FusionForm.DisplayCondition:Mixin.DisplayCondition':
+  abstract: true
+  properties:
+    displayCondition:
+      type: string
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        inspector:
+          group: 'form'
+          position: 'end'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'

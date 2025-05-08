@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Networkteam.FusionForm.DisplayCondition" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.displayCondition" xml:space="preserve">
+                <source>Display condition</source>
+            </trans-unit>
+            <trans-unit id="properties.displayCondition.ui.help.message" xml:space="preserve">
+                <source>Condition expression when to display the element. A subset of JavaScript (EEL) can be used. Form values can be reference by form element identifier.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

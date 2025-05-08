@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Networkteam.FusionForm.DisplayCondition" source-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.displayCondition" xml:space="preserve">
+                <source>Anzeigebedingung</source>
+            </trans-unit>
+            <trans-unit id="properties.displayCondition.ui.help.message" xml:space="preserve">
+                <source>Ausdruck für Anzeigebedingung, um zu bestimmen, wann das Element angezeigt wird. Eine Teilmenge von JavaScript (EEL) kann dafür benutzt werden. Formularwerte können anhand der Element-Bezeichnung (ID) referenziert werden.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

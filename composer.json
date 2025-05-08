@@ -21,5 +21,8 @@
         "neos": {
             "package-key": "Networkteam.FusionForm.DisplayCondition"
         }
+    },
+    "suggest": {
+        "sitegeist/papertiger": "Editable forms for Neos CMS"
     }
 }
