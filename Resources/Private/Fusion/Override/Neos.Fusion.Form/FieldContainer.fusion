@@ -1,0 +1,10 @@
+prototype(Neos.Fusion.Form:FieldContainer) {
+
+    // introduce property for holding display condition expression
+    displayCondition = ''
+
+    // use augmenter to add `data-display-condition` attribute to tag
+    renderer.@process.addDisplayCondition = Networkteam.FusionForm.DisplayCondition:Helper.DisplayConditionAugmenter {
+        @context.displayCondition = ${props.displayCondition}
+    }
+}

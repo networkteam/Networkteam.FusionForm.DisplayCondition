@@ -1,0 +1,12 @@
+Neos:
+  Neos:
+
+    fusion:
+      autoInclude:
+        Networkteam.FusionForm.DisplayCondition: true
+
+    userInterface:
+      translation:
+        autoInclude:
+          Networkteam.FusionForm.DisplayCondition:
+            - 'NodeTypes/*'

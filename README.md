@@ -43,18 +43,6 @@ data attribute to your components.
 Example:
 
 ```neosfusion
-// Extend FieldContainer
-prototype(Neos.Fusion.Form:FieldContainer) {
-
-    // introduce property for holding display condition expression
-    displayCondition = ''
-
-    // use augmenter to add `data-display-condition` attribute to tag
-    renderer.@process.addDisplayCondition = Networkteam.FusionForm.DisplayCondition:Helper.DisplayConditionAugmenter {
-        @context.displayCondition = ${props.displayCondition}
-    }
-}
-
 prototype(Vendor.Site:Content.SingleStepFormExample) < prototype(Neos.Fusion.Form:Runtime.RuntimeForm) {
 
     // set context variable to enable usage of display conditions. When set to `false` no display condition related
