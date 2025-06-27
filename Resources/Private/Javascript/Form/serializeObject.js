@@ -24,12 +24,14 @@ function serializeObject(form, namePrefix) {
         .filter(option => option.selected)
         .map(option => option.value);
     }
-
     // Checkbox value is toggled or not
     else if (field.type === 'checkbox') {
-      fieldValue = field.checked;
+      if (isArray) {
+        fieldValue = field.checked ? field.value : false;
+      } else {
+        fieldValue = field.checked;
+      }
     }
-
     // Radio value is value of checked field
     else if (field.type === 'radio') {
       if (field.checked) {
@@ -38,7 +40,6 @@ function serializeObject(form, namePrefix) {
         fieldValue = null;
       }
     }
-
     // Just use the value
     else {
       fieldValue = field.value;
